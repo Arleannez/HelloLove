@@ -228,36 +228,13 @@ button:hover {
 
 /* Style for audioPlayer as small play button */
 #audioPlayer {
-  width: 40px;
-  height: 40px;
-  background-color: #f8ff99;
-  border-radius: 50%;
+  width: 100px;
+  height: 50px;
   border: none;
   cursor: pointer;
   outline: none;
   padding: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+
   position: relative;
 }
 
-#audioPlayer::-webkit-media-controls-panel {
-  display: none !important;
-}
-
-#audioPlayer::-moz-media-controls {
-  display: none !important;
-}
-
-#audioPlayer::before {
-  content: '';
-  position: absolute;
-  left: 14px;
-  top: 10px;
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 16px solid #703f14;
-}
