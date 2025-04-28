@@ -238,3 +238,76 @@ button:hover {
   position: relative;
 }
 
+/* Responsive Design Fixes */
+
+/* Mobile phones */
+@media screen and (max-width: 480px) {
+  .column {
+    flex: 1 1 100%;
+    padding: 15px;
+  }
+  .Paragraph {
+    font-size: 13px;
+  }
+  .Title-About {
+    font-size: 1.3em;
+  }
+  .line-1 {
+    font-size: 1em;
+  }
+  .container {
+    padding: 8px 8px;
+  }
+  button {
+    font-size: 0.9em;
+    padding: 6px 6px;
+  }
+}
+
+/* Tablets including iPads */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .column {
+    flex: 1 1 50%;
+    padding: 30px;
+  }
+  .Paragraph {
+    font-size: 15px;
+  }
+  .Title-About {
+    font-size: 1.6em;
+  }
+  .line-1 {
+    font-size: 1.3em;
+  }
+  .container {
+    padding: 12px 15px;
+  }
+  button {
+    font-size: 1.1em;
+    padding: 8px 10px;
+  }
+}
+
+/* Desktops and larger */
+@media screen and (min-width: 1025px) {
+  .column {
+    flex: 1 1 50%;
+    padding: 50px;
+  }
+  .Paragraph {
+    font-size: 15px;
+  }
+  .Title-About {
+    font-size: 1.8em;
+  }
+  .line-1 {
+    font-size: 1.4em;
+  }
+  .container {
+    padding: 15px 20px;
+  }
+  button {
+    font-size: 1.2em;
+    padding: 10px 10px;
+  }
+}
