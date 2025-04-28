@@ -1,181 +1,170 @@
-html {
-  scroll-behavior: smooth;
-}
+html{
+    scroll-behavior: smooth;
+  }
 
-body {
-  background-color: #ffedea;
-  animation: fadeInAnimation ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadeInAnimation {
-  0% {
+  body {
+    background-color: #ffedea;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fadeInAnimation {
+    0% {
       opacity: 0;
-  }
-  100% {
+    }
+  
+    100% {
       opacity: 1;
+    }
   }
-}
+  
+  p,
+  h1 {
+    color: #703f14;
+  
+  }* {
+    box-sizing: border-box;
+  }
+  
 
-p,
-h1 {
-  color: #703f14;
+  /*SECTIONS*/
+  .Section-1{
+    background-color: #fff1e0;
+    padding: 2%;
+    margin-top: 1%;
+    border-radius: 5px;
+  }
+  .Paragraph{
+    font-size: 15px;
+    text-align: justify;
+  }
+  .Title-About {
+    text-align: center; /* Center the text */
+    width: 100%; /* Optional: Set width to 100% */
+    margin: 0 auto; /* Optional: Center the element itself */
+    margin-bottom: 1px;
 }
-
-* {
-  box-sizing: border-box;
-}
-
-/* SECTIONS */
-.Section-1 {
-  background-color: #fff1e0;
-  padding: 2%;
-  margin-top: 1%;
-  border-radius: 5px;
-}
-
-.Paragraph {
-  font-size: 15px;
-  text-align: justify;
-}
-
-.Title-About {
-  text-align: center; /* Center the text */
-  width: 100%; /* Optional: Set width to 100% */
-  margin: 0 auto; /* Optional: Center the element itself */
-  margin-bottom: 1px;
-}
-
-/* Columns */
-.column {
-  float: left;
-  width: 50%;
-  padding: 50px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.Banner {
-  background-size: 100%;
-  border-radius: 5px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-#Banner {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-/* Fade in */
-.Paragraph {
-  animation: fadeIn 6s 1s 1 normal both;
-}
-
-@keyframes fadeIn {
-  from {
+  /*Columns*/
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 50px;
+   
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .Banner {
+    background-size: 100%;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  #Banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  /*------Fade in--------------------------------------------*/
+  .Paragraph {
+    animation: fadeIn 6s 1s 1 normal both;
+  }
+  @keyframes fadeIn {
+    from {
       opacity: 0;
-  }
-  to {
+    }
+    to {
       opacity: 1;
+    }
   }
-}
-
-/* Typewriter */
-.line-1 {
-  position: relative;
-  top: 50%;
-  width: auto;
-  text-align: justify;
-  white-space: nowrap;
-  overflow: hidden;
-  transform: translateY(-50%);
-}
-
-/* Animation */
-.anim-typewriter {
+  
+  /*------Typer Writer---------------------------------------------------------*/
+  
+  .line-1{
+    position: relative;
+    top: 50%;  
+    width: auto;
+    text-align: justify;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+  }
+  
+  /* Animation */
+  .anim-typewriter{
   animation: typewriter 4s steps(44) 1s 1 normal both,
-      blinkTextCursor 500ms steps(44) infinite normal;
-}
-
-@keyframes typewriter {
-  from {
-      width: 0;
+  blinkTextCursor 500ms steps(44) infinite normal;
   }
-  to {
-      width: 24em;
+  @keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
   }
-}
-
-@keyframes blinkTextCursor {
-  from {
-      border-right-color: rgba(255, 255, 255, .75);
+  @keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
   }
-  to {
-      border-right-color: transparent;
+  
+  /*----------------------Image Slide Show---------------------*/
+  .PhotoSlideshow {
+    margin-top: 1%;
+    padding: 1%;
+    border-radius: 10px;
+    border: solid whitesmoke 2px;
+    margin-bottom: 1%;
   }
-}
-
-/* Image Slide Show */
-.PhotoSlideshow {
-  margin-top: 1%;
-  padding: 1%;
-  border-radius: 10px;
-  border: solid whitesmoke 2px;
-  margin-bottom: 1%;
-}
-
-.album {
-  width: auto;
-  height: 200px;
-  overflow: hidden;
-  padding: 1%;
-  background-color: #800020;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-}
-
-.slides {
-  display: flex;
-  flex-wrap: nowrap;
-  width: 100%;
-  height: 100%;
-  animation: scroll 15s linear infinite;
-}
-
-.slides img {
-  width: auto; /* Adjusted to 10% */
-  height: auto;
-  object-fit: cover;
-  margin: 10px;
-  border-radius: 10px;
-  flex-basis: 10%; /* Adjusted to 10% */
-}
-
-@keyframes scroll {
-  0% {
+  
+  .album {
+    width: auto;
+    height: 200px;
+    overflow: hidden;
+    padding: 1%;
+    background-color: #800020;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .slides {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+    animation: scroll 15s linear infinite;
+  }
+  
+  .slides img {
+    width: auto; /* Adjusted to 10% */
+    height: auto;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px;
+    flex-basis: 10%; /* Adjusted to 10% */
+  }
+  
+  @keyframes scroll {
+    0% {
       transform: translateX(0);
-  }
-  100% {
+    }
+    100% {
       transform: translateX(-100%);
+    }
   }
-}
+  
+
+
 
 .container {
   text-align: center;
   padding: 10px 20px;
   border-radius: 20px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
 .buttons {
@@ -198,6 +187,7 @@ button:hover {
   background-color: #ff66b2;
   transform: scale(1.1);
 }
+
 #response {
   margin-top: 30px;
   font-size: 1.5em;
@@ -205,66 +195,69 @@ button:hover {
 }
 
 /* Responsive Design Fixes */
-@media screen and (max-width: 1024px) { /* iPad and similar devices */
+@media screen and (max-width: 768px) {
   .column {
-      float: none;
-      width: 100%;
-      padding: 20px;
+    float: none;
+    width: 100%;
+    padding: 20px;
   }
   .Paragraph {
-      font-size: 14px;
+    font-size: 14px;
   }
   .Title-About {
-      font-size: 1.5em;
+    font-size: 1.5em;
   }
   .line-1 {
-      font-size: 1.2em;
+    font-size: 1.2em;
   }
   .container {
-      padding: 10px 10px;
+    padding: 10px 10px;
   }
   button {
-      font-size: 1em;
-      padding: 8px 8px;
+    font-size: 1em;
+    padding: 8px 8px;
   }
 }
 
-@media screen and (max-width: 768px) { /* Mobile devices */
-  .column {
-      float: none;
-      width: 100%;
-      padding: 10px;
-  }
-  .Paragraph {
-      font-size: 13px;
-  }
-  .Title-About {
-      font-size: 1.3em;
-  }
-  .line-1 {
-      font-size: 1.1em;
-  }
-  .container {
-      padding: 5px 5px;
-  }
-  button {
-      font-size: 0.9em;
-      padding: 6px 6px;
-  }
+/* Center the sadCat gif */
+#sadCat {
+  display: block;
+  margin: 20px auto 0 auto;
+  width: 60px;
 }
 
-@media screen and (max-width: 480px) { /* Extra small devices */
-  .Paragraph {
-      font-size: 12px;
-  }
-  .Title-About {
-      font-size: 1.2em;
-  }
-  .line-1 {
-      font-size: 1em;
-  }
-  button {
-      font-size: 0.8em;
-      padding: 5px 5px;
-  }
+/* Style for audioPlayer as small play button */
+#audioPlayer {
+  width: 40px;
+  height: 40px;
+  background-color: #f8ff99;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+}
+
+#audioPlayer::-webkit-media-controls-panel {
+  display: none !important;
+}
+
+#audioPlayer::-moz-media-controls {
+  display: none !important;
+}
+
+#audioPlayer::before {
+  content: '';
+  position: absolute;
+  left: 14px;
+  top: 10px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 16px solid #703f14;
 }
