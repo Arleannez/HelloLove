@@ -13,15 +13,13 @@ yesBtn.addEventListener('click', () => {
     noBtn.style.display = 'none'; // Hide the No button
     response.textContent = "WOAH! YIPPEE O__o"; // Response for Yes
 });
-
-// Handle the initial No button click
 noBtn.addEventListener('click', () => {
-    response.innerHTML = "Are you sure?"; // Change response message
-    sadCat.style.display = 'block'; // Show the crying cat
-    officialImage.style.display = 'none'; // Hide the official image if it's visible
-    yesBtn.style.display = 'none'; // Hide the Yes button
-    noBtn.style.display = 'none'; // Hide the No button
-    areYouSureBtn.style.display = 'inline'; // Show the Are You Sure button
+    response.innerHTML = "😭 You broke my heart... <br> I'll just be crying alone forever... 🎻💔";
+    sadCat.style.display = 'block';
+    officialImage.style.display = 'none';
+    yesBtn.style.display = 'none';
+    noBtn.style.display = 'none';
+    areYouSureBtn.style.display = 'none';
 });
 
  // Set the volume to low (0.1 is low, 1 is max)
