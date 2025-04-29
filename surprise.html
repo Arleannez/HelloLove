@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Surprise for My Love</title>
+    <link rel="stylesheet" type="text/css" href="surprise.css" />
+    <style></style>
+  </head>
+  <body>
+    <div>
+      <h1>To My Love</h1>
+      <p>
+        You are the light of my life. I love you endlessly.<br />
+        You are the sweetest girl I have ever met.<br />
+        Every moment spent with you is a treasure that I hold close to my heart.
+        Your smile is my favorite sight, and your laughter is the sweetest sound
+        I know. <br> <br> 
+        You make my world a better place just by being in it, and I love
+        you not only for who you are but for who I am when I’m with you. 
+        <br>With
+        you, every day feels like a beautiful adventure, and your kindness and
+        beauty inspire me to be a better person. I could search a lifetime and
+        never find someone as wonderful as you. You are my heart’s desire, and I
+        cherish every moment we share together.
+        <br><br>
+        As corny as I can be this is all but honest feelings for you, Babi.
+        <br><br>
+        Ayiee 
+      </p>
+    </div>
+    <div
+      class="audio-player"
+      id="audioPlayerBtn"
+      tabindex="0"
+      role="button"
+      aria-label="Play/Pause music"
+    ></div>
+    <audio
+      autoplay
+      id="audioPlayer"
+      src="Images/Dalangin - Earl Agustin (Performance Video).mp3"
+    ></audio>
+
+    <!-- Multiple hearts floating up -->
+    <div class="heart" style="--i: 0; --x: -20"></div>
+    <div class="heart" style="--i: 1; --x: 15"></div>
+    <div class="heart" style="--i: 2; --x: -10"></div>
+    <div class="heart" style="--i: 3; --x: 25"></div>
+    <div class="heart" style="--i: 4; --x: -15"></div>
+    <div class="heart" style="--i: 5; --x: 10"></div>
+
+    <script>
+      const audioPlayer = document.getElementById("audioPlayer");
+      const audioPlayerBtn = document.getElementById("audioPlayerBtn");
+
+      // Set initial volume lower
+      audioPlayer.volume = 0.2;
+
+      audioPlayerBtn.addEventListener("click", () => {
+        if (audioPlayer.paused) {
+          audioPlayer.play();
+          audioPlayerBtn.classList.add("playing");
+        } else {
+          audioPlayer.pause();
+          audioPlayerBtn.classList.remove("playing");
+        }
+      });
+
+      // Optional: Pause audio when page is hidden
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) {
+          audioPlayer.pause();
+          audioPlayerBtn.classList.remove("playing");
+        }
+      });
+    </script>
+  </body>
+</html>

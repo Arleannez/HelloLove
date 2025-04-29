@@ -11,7 +11,7 @@ yesBtn.addEventListener('click', () => {
     sadCat.style.display = 'none'; // Hide the sad cat if it's visible
     yesBtn.style.display = 'none'; // Hide the Yes button
     noBtn.style.display = 'none'; // Hide the No button
-    response.textContent = "WOAH! YIPPEE O__o"; // Response for Yes
+    response.innerHTML = "WOAH! YIPPEE O__o <br><a href='surprise.html' target='_blank'>Click here for a surprise!</a>"; // Response for Yes with link
 });
 noBtn.addEventListener('click', () => {
     response.innerHTML = "😭 You broke my heart... <br> I'll just be crying alone forever... 🎻💔";

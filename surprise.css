@@ -1,0 +1,240 @@
+body.surprise-body {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.surprise-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.surprise-container h1 {
+  font-size: 3em;
+  margin-bottom: 0.2em;
+  animation: fadeInDown 2s ease forwards;
+}
+
+.surprise-container p {
+  font-size: 1.5em;
+  margin-top: 0;
+  animation: fadeInUp 2s ease forwards;
+  animation-delay: 2s;
+  opacity: 0;
+}
+
+/* Heart animation */
+.surprise-heart {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #ff4b5c;
+  transform: rotate(-45deg);
+  animation: floatUp 5s linear infinite;
+  opacity: 0.8;
+  border-radius: 15px 15px 0 0;
+  left: 50%;
+  bottom: 0;
+}
+
+.surprise-heart::before,
+.surprise-heart::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #ff4b5c;
+  border-radius: 50%;
+}
+
+.surprise-heart::before {
+  top: -15px;
+  left: 0;
+}
+
+.surprise-heart::after {
+  left: 15px;
+  top: 0;
+}
+
+/* Adjusted audio player styles for top center and smaller size */
+.audio-player {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  background: #ff66b2;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #ff66b2;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease;
+  z-index: 10;
+}
+.audio-player:hover {
+  background: #ff4b9e;
+  box-shadow: 0 0 25px #ff4b9e;
+}
+.audio-player:before {
+  content: "";
+  position: absolute;
+  left: 30px;
+  top: 25px;
+  border-style: solid;
+  border-width: 18px 0 18px 28px;
+  border-color: transparent transparent transparent white;
+  transition: border-color 0.3s ease;
+}
+.audio-player.playing:before {
+  border-width: 0 0 0 0;
+  width: 28px;
+  height: 28px;
+  background: white;
+  clip-path: polygon(0 0, 40% 0, 40% 100%, 0 100%, 0 0, 60% 0, 60% 100%, 100% 100%, 100% 0, 60% 0);
+  left: 25px;
+  top: 25px;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateX(0) translateY(0) rotate(-45deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(var(--x, 0)) translateY(-600px) rotate(-45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+  body {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    text-align: center;
+    position: relative;
+  }
+
+  h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-right: 9%;
+    margin-bottom: 0.2em;
+    animation: fadeInDown 2s ease forwards;
+  }
+
+  p {
+    text-align: justify center;
+    font-size: 1.5em;
+    margin-top: 0;
+    padding: 4%;
+    animation: fadeInUp 2s ease forwards;
+    animation-delay: 2s;
+    opacity: 0;
+  }
+
+  /* Heart animation */
+  .heart {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #ff4b5c;
+    transform: rotate(-45deg);
+    animation: floatUp 5s linear infinite;
+    opacity: 0.8;
+    border-radius: 15px 15px 0 0;
+    left: 50%;
+    bottom: 0;
+    animation-delay: calc(var(--i) * 0.5s);
+  }
+  .heart::before,
+  .heart::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #ff4b5c;
+    border-radius: 50%;
+  }
+  .heart::before {
+    top: -15px;
+    left: 0;
+  }
+  .heart::after {
+    left: 15px;
+    top: 0;
+  }
+
+  @keyframes floatUp {
+    0% {
+      transform: translateX(0) translateY(0) rotate(-45deg);
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateX(calc(var(--x) * 1px)) translateY(-600px) rotate(-45deg);
+      opacity: 0;
+    }
+  }
+
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
