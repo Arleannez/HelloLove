@@ -4,9 +4,12 @@ html{
 
   body {
     background-color: #ffedea;
-    animation: fadeInAnimation ease 3s;
+    animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
   }
   @keyframes fadeInAnimation {
     0% {
@@ -30,7 +33,7 @@ html{
   /*SECTIONS*/
   .Section-1{
     background-color: #fff1e0;
-    padding: 2%;
+    padding: 10%;
     margin-top: 1%;
     border-radius: 5px;
   }
@@ -75,7 +78,7 @@ html{
   }
   /*------Fade in--------------------------------------------*/
   .Paragraph {
-    animation: fadeIn 6s 1s 1 normal both;
+    animation: fadeIn 2s 1s 1 normal both;
   }
   @keyframes fadeIn {
     from {
@@ -110,51 +113,6 @@ html{
   @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
-  }
-  
-  /*----------------------Image Slide Show---------------------*/
-  .PhotoSlideshow {
-    margin-top: 1%;
-    padding: 1%;
-    border-radius: 10px;
-    border: solid whitesmoke 2px;
-    margin-bottom: 1%;
-  }
-  
-  .album {
-    width: auto;
-    height: 200px;
-    overflow: hidden;
-    padding: 1%;
-    background-color: #800020;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-  }
-  
-  .slides {
-    display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    height: 100%;
-    animation: scroll 15s linear infinite;
-  }
-  
-  .slides img {
-    width: auto; /* Adjusted to 10% */
-    height: auto;
-    object-fit: cover;
-    margin: 10px;
-    border-radius: 10px;
-    flex-basis: 10%; /* Adjusted to 10% */
-  }
-  
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
   }
   
 
@@ -192,31 +150,6 @@ button:hover {
   margin-top: 30px;
   font-size: 1.5em;
   color: #333;
-}
-
-/* Responsive Design Fixes */
-@media screen and (max-width: 768px) {
-  .column {
-    float: none;
-    width: 100%;
-    padding: 20px;
-  }
-  .Paragraph {
-    font-size: 14px;
-  }
-  .Title-About {
-    font-size: 1.5em;
-  }
-  .line-1 {
-    font-size: 1.2em;
-  }
-  .container {
-    padding: 10px 10px;
-  }
-  button {
-    font-size: 1em;
-    padding: 8px 8px;
-  }
 }
 
 /* Center the sadCat gif */
