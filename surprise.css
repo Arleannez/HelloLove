@@ -108,6 +108,38 @@ body.surprise-body {
   top: 25px;
 }
 
+/* Responsive Design Fixes */
+
+/* Mobile phones */
+@media screen and (max-width: 480px) {
+  .lyrics {
+    font-size: 1em;
+    max-width: 90%;
+    padding: 8px 10px;
+  }
+  h1 {
+    font-size: 1.5em !important;
+  }
+  p {
+    font-size: 1em !important;
+  }
+}
+
+/* Tablets including iPads */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .lyrics {
+    font-size: 1.1em;
+    max-width: 80%;
+    padding: 10px 15px;
+  }
+  h1 {
+    font-size: 2em !important;
+  }
+  p {
+    font-size: 1.2em !important;
+  }
+}
+
 @keyframes floatUp {
   0% {
     transform: translateX(0) translateY(0) rotate(-45deg);
@@ -159,7 +191,6 @@ body.surprise-body {
   h1 {
     font-size: 3em;
     text-align: center;
-    margin-right: 9%;
     margin-bottom: 0.2em;
     animation: fadeInDown 2s ease forwards;
   }
@@ -238,3 +269,27 @@ body.surprise-body {
       transform: translateY(0);
     }
   }
+
+  /* Mobile phones */
+@media screen and (max-width: 480px) {
+  .column {
+    flex: 1 1 100%;
+    padding: 15px;
+  }
+  .Paragraph {
+    font-size: 13px;
+  }
+  .Title-About {
+    font-size: 1.3em;
+  }
+  .line-1 {
+    font-size: 1em;
+  }
+  .container {
+    padding: 8px 8px;
+  }
+  button {
+    font-size: 0.9em;
+    padding: 6px 6px;
+  }
+}
