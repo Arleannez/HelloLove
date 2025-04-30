@@ -291,3 +291,19 @@ body.surprise-body {
     padding: 6px 6px;
   }
 }
+
+
+@media only screen and (max-width: 2960px) {
+  .responsive-media {
+      width: 100%; /* Make media take full width */
+      height: auto; /* Maintain aspect ratio */
+  }
+}
+
+/* Specific styles for Galaxy S8+ dimensions */
+@media only screen and (min-width: 720px) and (max-width: 1440px) {
+  .responsive-media {
+      width: 100%; /* Full width for smaller screens */
+      height: auto; /* Maintain aspect ratio */
+  }
+}
