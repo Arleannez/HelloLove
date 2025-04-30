@@ -112,13 +112,10 @@ body.surprise-body {
 
 /* Mobile phones */
 @media screen and (max-width: 480px) {
-  .lyrics {
-    font-size: 1em;
-    max-width: 90%;
-    padding: 8px 10px;
-  }
   h1 {
     font-size: 1.5em !important;
+    margin-top: 9%;
+    margin: auto;
   }
   p {
     font-size: 1em !important;
@@ -189,8 +186,8 @@ body.surprise-body {
   }
 
   h1 {
-    font: size 3px;
-    margin-top: 90px;
+    font-size: 30px;
+    margin-top: 9%;
     text-align: center;
     margin-bottom: 0.2em;
     animation: fadeInDown 2s ease forwards;
@@ -198,7 +195,7 @@ body.surprise-body {
 
   p {
     text-align: justify center;
-    font-size: 40px;
+    font-size: 20px;
     margin-top: 0;
     padding: 4%;
     animation: fadeInUp 2s ease forwards;
