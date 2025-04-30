@@ -305,4 +305,9 @@ body.surprise-body {
       width: 100%; /* Full width for smaller screens */
       height: auto; /* Maintain aspect ratio */
   }
+    h1 {
+    font-size: 1.5em !important;
+    margin-top: 9%;
+    margin: auto;
+  }
 }
