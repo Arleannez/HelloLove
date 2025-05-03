@@ -45,6 +45,8 @@ Whether it's a birthday, anniversary, or a random day you want to make special, 
    ```bash
    git clone https://github.com/Arleannez/HelloLove.git
 
+   **Or Download the Zip File and Host it in your own github repo page**
+
 2. **cd HelloLove**
 3. **Open index.html in your browser (double-click or use Live Server in VS Code).**
 
