@@ -45,12 +45,12 @@ Whether it's a birthday, anniversary, or a random day you want to make special, 
    ```bash
    git clone https://github.com/Arleannez/HelloLove.git
 
-   **Or Download the Zip File and Host it in your own github repo page**
 
 2. **cd HelloLove**
 3. **Open index.html in your browser (double-click or use Live Server in VS Code).**
 
-4.**To view the surprise, open surprise.html (or link it from the main page)!**
+4. **To view the surprise, open surprise.html (or link it from the main page)!**
+5. **Or Download the Zip File and Host it in your own github repo page**
 
 ## 💡 Customize It
 **Want to personalize it more?**
@@ -65,4 +65,4 @@ Whether it's a birthday, anniversary, or a random day you want to make special, 
 ***Made with heart by Arleannez***
 Because sometimes, the best gifts don’t come in a box — they come from the 💻 and the ❤️.
 
-<p align="center"> Made with 🌷, ☕, and a whole lot of 💘 </p>
+<p align="center"> Peace Out Lovers!</p>
